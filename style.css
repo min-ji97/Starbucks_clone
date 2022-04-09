@@ -1,0 +1,59 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+#header{
+    /* background-color: #f6f5ef;
+    border-top: 2px solid black;
+    border-bottom: 1px solid #e5e5e5;
+    width: 100%; */
+}
+
+#container {
+    width: 100%;
+    /* height: 1200px; */
+    /* background: url(images/pick_your/fav_prod_bg_new.jpg); */
+    
+}
+
+/* #footer{
+
+} */
+.inner{
+    /* width: 1100px;
+    margin: auto; */
+}
+
+/* header - nav */
+
+.search_btn{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* container */
+
+.new_spring_menu_page{
+    background: url(images/bring_new_spring/2022_Spring2_main_bg2.jpg);
+}
+
+.spring_season_blend_page{
+    background: url(images/스프링시즌블렌드/2022_Spring_bean_bg_1.jpg);
+}
+
+.indonesia_page{
+    background: url(images/인도네시아_자바/reserve_2022_indonesia_visual_bg.jpg);
+}
+
+.favorite_page{
+    background: url(images/pick_your/fav_prod_bg_new.jpg);
+}
+
+.reserve_magazine_page{
+    background: url(images/리저브_매거진/reserve_bg_pc.png);
+}
+
+.find_store_page{
+    background: url(images/스타벅스_매장/store_bg.jpg);
+}
