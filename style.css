@@ -36,6 +36,8 @@ ul, li{
     
     left: 0;
     top: 0;
+
+    z-index: 10;
     
     
 }
@@ -240,14 +242,191 @@ ul, li{
     cursor: pointer;
 }
 
+/* 뉴 스프링 메뉴 */
 .new_spring_menu_page{
-    background: url(images/bring_new_spring/2022_Spring2_main_bg2.jpg);
+    background: center/cover no-repeat url(images/bring_new_spring/2022_Spring2_main_bg2.jpg);
+    /* position: relative; */
+    height: 646px;
+    width: 100%;
 }
 
+.new_spring_menu_page-inner{
+    position: relative;
+}
+
+.new_spring__title,
+.new_spring__menus img,
+.new_spring__detail {
+    position: absolute;
+}
+
+
+.new_spring__title {
+    /* display: inline-block; */
+    margin: 30px;
+    top: 30px;
+    left: -27px;
+}
+
+.new_spring__detail{
+    width: 355px;
+    text-align: center;
+    top: 254px;
+    left: 5px;
+}
+.new_spring__detail button {
+    font-size: 16px;
+    line-height: 18px;
+    border: 2px solid #e95a87;
+    border-radius: 5px;
+    width: 129px;
+    background: transparent;
+    padding: 10px;
+    color: #e95a87;
+    cursor: pointer;
+    /* margin: 0 auto; */
+}
+
+.new_spring__detail button:hover{
+    text-decoration: underline;
+}
+    /* transition: background-color .5s; */
+    /* -webkit-transition: background-color .5s; */
+
+
+.new_spring__menus div:nth-child(1) img{
+    top: 41px;
+    left: 442px;
+}
+
+.new_spring__menus div:nth-child(2) img{
+    top: 208px;
+    left: 195px;
+}
+
+.new_spring__menus div:nth-child(3) img{
+    top: 118px;
+    left: 832px;
+}
+
+/* 공지사항 및 프로모션 */
+.notice_and_promotion_page{
+    height: 62px;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+
+
+.notice_box_left{
+    width: 55%;
+    height: 62px;
+    background-color: #111;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.promotion_box_right{
+    width: 45%;
+    height: 62px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.box-inner{
+    position: relative;
+}
+
+.notice_box{
+    width: 57%;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 62px;
+    top: 0px;
+    left: 0px;
+    color: white;
+
+    /* margin-top: 10px; */
+    
+  
+    /* line-height: 20px; */
+    /* display: inline-block; */
+    /* color: white; */
+}
+
+.notice_title{
+    font-size: 17px;
+    margin-right: 10px;
+    display: inline-block;
+    /* color: white; */
+    width: 68px;
+   
+}
+.notice_list{
+   display: inline-block;
+   /* width: 100px; */
+ 
+    
+}
+.notice_box a{
+    width: 30px;
+    float: right;
+    /* line-height: 30px; */
+    vertical-align: middle;
+    font-size: 23px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    /* width: 50px;
+    height: 50px; */
+    
+    display: inline-block;
+    margin-left: 10px;
+
+}
+.notice_box ul li{
+    display: none;
+    overflow: hidden;
+    /* height: 60px; */
+    font-size: 13px;
+    width: 300px;
+}
+.notice_box ul li:hover{
+    text-decoration: underline;
+   
+}
+#active{
+    display: inline;
+    color: #ffffff;
+}
+
+.promotion_box{
+    position: absolute;
+    height: 62px;
+    top: 0;
+    right: 0;
+    color: black;
+
+    /* display: inline-block; */
+}
+
+
+/* 프로모션 배너 보여주기 */
+.promotion_banners{
+    margin-top: 130px;
+}
+
+/* 스프링 시즌 원두 */
 .spring_season_blend_page{
     background: url(images/스프링시즌블렌드/2022_Spring_bean_bg_1.jpg);
 }
 
+/* 인도네시아 자바 */
 .indonesia_page{
     
     background: url(images/인도네시아_자바/reserve_2022_indonesia_visual_bg.jpg);
