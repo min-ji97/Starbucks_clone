@@ -440,6 +440,8 @@ ul, li{
 
 /* 프로모션 배너 보여주기 */
 .promotion_banners{
+    /* 누르면 display 보이게 해 줄 예정..!! */
+    display: none; 
     background-color: #f6f5ef;
     /* margin-top: 40px; */
     padding-top: 40px;
@@ -519,7 +521,7 @@ ul, li{
 .rewards_page{
     background-color: #1e3932;
     box-sizing: border-box;
-    padding: 30px 0px 40px 0px;
+    padding: 30px 0px 50px 0px;
  
 }
 .rewards_page_img_box{
@@ -527,8 +529,6 @@ ul, li{
     display: inline-block;
 }
 .rewards_page img{
-    /* display: inline-block; */
-    /* display: block; */
     width: 176px;
     margin: 0px 40px;
     float: left;
@@ -543,7 +543,6 @@ ul, li{
 }
 .rewards_page_top{
     position: relative;
-    /* box-sizing: border-box; */
     margin: 10px;
     display: block;
     color: white;
@@ -551,39 +550,53 @@ ul, li{
     border-bottom: 1px solid #4b615b;
     margin-left: 40px;
     padding-bottom: 20px;
-    /* float: right; */
 }
 .rewards_page_top h2{
     margin-bottom: 12px;
 }
 
-.rewards_page_top__btn_1{
+.rewards_page_text_box a{
     position: absolute;
-    top: 68px;
-    right: 127px;
+    font-size: 14px;
+    color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.rewards_page_text_box a:hover{
+    text-decoration: underline;
+}
+.rewards_page_top__btn_1{
+    top: 53px;
+    right: 102px;
+    
+    padding: 8px 18px;
+    border: 2px solid #00704a;
+    background-color: #00704a;
 }
 
 .rewards_page_top__btn_2{
-    position: absolute;
-    top: 68px;
-    right: 35px;
+    top: 53px;
+    right: 9px;
+    padding: 8px 18px;
+    border: 2px solid white;
+    background-color: transparent;
 
 }
 
 .rewards_page_bottom{
     position: relative;
-    display: inline-block;
+    display: block;
     color: white;
-    box-sizing: border-box;
     margin-left: 40px;
-    margin-top: 10px;
-    margin-bottom: 20px;
     font-size: 14px;
 }
+
 .rewards_page_bottom a{
-    position: absolute;
     top: 0;
-    right: -211px;
+    right: 14px;
+    padding: 8px 30px;
+    border: 2px solid white;
+    background-color: transparent;
 }
 
 /* 스프링 시즌 원두 */
