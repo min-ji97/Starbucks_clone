@@ -602,6 +602,60 @@ ul, li{
 /* 스프링 시즌 원두 */
 .spring_season_blend_page{
     background: url(images/스프링시즌블렌드/2022_Spring_bean_bg_1.jpg);
+    position: relative;
+    height: 572px;
+    width: 100%;
+    /* height: 100%; */
+}
+
+.spring_season_blend_page::before{
+    background: no-repeat url(images/스프링시즌블렌드/2022_Spring_bean_left_bg_1.png);
+    top: 0;
+    left: 0;
+    position: absolute;
+    content: "";
+    width: 25%;
+    height: 100%;
+}
+.spring_season_blend_page::after{
+    background: no-repeat url(images/스프링시즌블렌드/2022_Spring_bean_right_bg_1.png);
+    content: "";
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.spring_season_blend_img img{
+    /* margin: 20px; */
+    position: relative;
+    top: 93px;
+    left: 169px;
+}
+
+.spring_season_blend_txt { 
+    position: relative;
+    display: inline-block;
+    top: -235px;
+    left: 629px;
+}
+
+.spring_season_blend_txt a{
+    /* position: relative;
+    top: 0;
+    right: 0; */
+    width: 124px;
+    display: block;
+    margin-top: 28px;
+    border: 2px solid #e95a87;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 7px;
+    color: #e95a87;
+}
+.spring_season_blend_txt a:hover{
+    text-decoration: underline;
 }
 
 /* 인도네시아 자바 */
