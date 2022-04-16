@@ -52,7 +52,8 @@ ul, li{
 }
 
 #footer{
-
+    background: #2C2A29;
+    padding: 40px 0px;
 }
 .inner{
     width: 1100px;
@@ -609,19 +610,19 @@ ul, li{
 }
 
 .spring_season_blend_page::before{
-    background: no-repeat url(images/스프링시즌블렌드/2022_Spring_bean_left_bg_1.png);
+    /* background: no-repeat url(images/스프링시즌블렌드/2022_Spring_bean_left_bg_1.png); */
+    content:  url(images/스프링시즌블렌드/2022_Spring_bean_left_bg_1.png);
+    /* width: 25%;
+    height: 100%; */
     top: 0;
     left: 0;
-    position: absolute;
-    content: "";
-    width: 25%;
-    height: 100%;
+    position: absolute;   
 }
 .spring_season_blend_page::after{
-    background: no-repeat url(images/스프링시즌블렌드/2022_Spring_bean_right_bg_1.png);
-    content: "";
-    width: 25%;
-    height: 100%;
+    /* background: no-repeat url(images/스프링시즌블렌드/2022_Spring_bean_right_bg_1.png); */
+    content: url(images/스프링시즌블렌드/2022_Spring_bean_right_bg_1.png);
+    /* width: 25%;
+    height: 100%; */
     position: absolute;
     top:0;
     right: 0;
@@ -660,38 +661,248 @@ ul, li{
 
 /* 인도네시아 자바 */
 .indonesia_page{
-    
     background: url(images/인도네시아_자바/reserve_2022_indonesia_visual_bg.jpg);
+    position: relative;
+}
+
+.indonesia_page::before{
+    /* background: no-repeat url(images/인도네시아_자바/reserve_2022_indonesia_leaf1.png); */
+    content: url(images/인도네시아_자바/reserve_2022_indonesia_leaf1.png);
+    position: absolute;
+    top: 127px;
+    left: 0;
+    /* width: 50%; */
+    /* height: 100%; */
+}
+
+.indonesia_page::after{
+    /* background: no-repeat url(images/인도네시아_자바/reserve_2022_indonesia_leaf2.png); */
+    content: url(images/인도네시아_자바/reserve_2022_indonesia_leaf2.png);
+    position: absolute;
+    top: 99px;
+    right: 0;
+    /* width: 50%; */
+    /* height: 100%; */
+
 }
 
 .indonesia_page_inner{
     position: relative;
-    /* width: 100%; */
     height: 400px;
     overflow: hidden;
+    /* margin: auto; */
+}
 
+.indonesia_coffee_logo{
+    display: block;
+    padding-top: 122px;
+    margin-left: -2px;
 }
 
 .indonesia_coffee_img {
     position: absolute;
-    max-width: none;
-    left: -400px;
-    bottom: 0;
+    /* max-width: none; */
+    left: -478px;
+    bottom: -4px;
 
 }
 
+.indonesia_coffee_btn{
+    /* width: 100px; */
+    margin-top: 37px;
+    margin-left: 256px;
+    z-index: 10;
+}
+
+.indonesia_coffee_btn a{
+    /* box-sizing: border-box; */
+    font-size: 14px;
+    color: #b9813e;
+    border: 2px solid #b9813e;
+    border-radius: 5px;
+    /* width: 100px; */
+    padding: 8px 23px;
+}
+
+.indonesia_coffee_btn a:hover{
+    background-color: #b9813e;
+    color: white ;
+    transition: all ease 1s;
+}
+
+
+
+/*  최애 메뉴 */
 .favorite_page{
-
-    background: url(images/pick_your/fav_prod_bg_new.jpg);
+    background: center no-repeat fixed url(images/pick_your/fav_prod_bg_new.jpg);
+    height: 800px;
+}
+.favorite_page_inner{
+    position: relative;
+}
+.favorite_page_logo{
+    position: absolute;
+    top: 129px;
+    left: 100px;
 }
 
+.favorite_page_txt{
+    position: absolute;
+    top: 383px;
+    left: 0;
+}
+
+.favorite_page_img{
+    position: absolute;
+    top: 111px;
+    right: -121px;
+
+}
+
+.favorite_page_btn a{
+    color: white;
+    position: absolute;
+    top: 575px;
+    left: 233px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    padding: 8px 25px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.favorite_page_btn a:hover{
+   background-color: white;
+   color:#333;
+   transition: all ease 0.8s;
+   text-decoration: underline;
+}
+
+
+
+
+
+/* 리저브 매거진 */
 .reserve_magazine_page{
-    background: url(images/리저브_매거진/reserve_bg_pc.png);
+    background: no-repeat url(images/리저브_매거진/reserve_bg_pc.png) 60% 100% /auto 88%;
+
+   height: 400px;
+    /* background: no-repeat url(images/리저브_매거진/reserve_bg_pc.png) 100% 100%/auto 80%; */
+    /* background-size: auto 80%; */
+    /* background-color: pink; */
+    /* margin-top: 50px; */
+}
+.reserve_magazine_page_inner{
+    position: relative;
+}       
+.reserve_magazine_page_logo{
+    display: inline-block;
+    width: 100%;
+    margin: 130px 0px 30px 40px;
+}
+.reserve_magazine_page_img{
+    /* display: inline-block; */
+    position: absolute;   
+    top: 0px;
+    right: 78px;
+}
+.reserve_magazine_page_btn{
+    width: 50%;
+}
+.reserve_magazine_page_btn a{
+    /* display: inline-block; */
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 8px 20px;
+    color: black;
+    /* width: 50%; */
+    text-align: center;
+    /* margin-left: 230px; */
+    margin-right: 80px;
+    float: right;
 }
 
+.reserve_magazine_page_btn a:hover{
+    color: white;
+    background-color: black;
+    transition: all ease 0.8s;
+    text-decoration: underline;
+}
+
+/* 매장 찾기 */
 .find_store_page{
     background: url(images/스타벅스_매장/store_bg.jpg);
+    height: 400px;
+}
+.find_store_page_inner{
+    position: relative;
+    /* width: 100%; */
+    overflow: hidden;
+    height: 100%;
+}
+.find_store_page_img_1{
+    position: absolute;
+    top: 148px;
+    left: 291px;
+    z-index: 1;
+}
+.find_store_page_img_2{
+    position: absolute;
+    top: 0;
+    left: 56px;
+
+}
+.find_store_page_img_3{
+    position: absolute;
+    top: -57px;
+    left: 413px;
+
+}
+.find_store_page_img_4{
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+
+}
+.find_store_page_txt_1{
+    position: absolute;
+    top: 103px;
+    right: 84px;
+
+}
+.find_store_page_txt_2{
+    position: absolute;
+    top: 174px;
+    right: 102px;
+
+}
+.find_store_page_btn a{
+    position: absolute;
+   
+    top: 258px;
+    right: 336px;
+
+     font-size: 15px;
+     border: 2px solid black;
+     border-radius: 5px;
+     box-sizing: border-box;
+     padding: 8px 31px;
+     color: black;
+     /* width: 50%; */
+     text-align: center;
+     /* margin-left: 230px; */
+     /* margin-right: 80px; */
+     /* float: right; */
 }
 
+.find_store_page_btn a:hover{
+    color: white;
+    background-color: black;
+    transition: all ease 0.8s;
+    text-decoration: underline;
+}
 /* ****************************************************************/
 /* footer */
+
