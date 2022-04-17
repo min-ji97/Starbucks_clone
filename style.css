@@ -6,7 +6,7 @@
 }
 
 body{
-     overflow-x: hidden;
+    overflow-x: hidden;
     /* padding-top: 230px; */
 }
 
@@ -905,4 +905,139 @@ ul, li{
 }
 /* ****************************************************************/
 /* footer */
+
+.footer_inner{
+    color: white;
+    position: relative;
+}
+
+.footer_inner a{
+    color: white;
+   
+}
+
+.footer_menu{
+    /* position: relative;
+    right: 0;
+    top: 0; */
+    /* display: inline-block; */
+    background: no-repeat right 0 url(images/footer/footer_logo.png);
+    /* float: right; */
+   
+}
+
+.footer_menu ul{
+    display: inline-block;
+    margin-right: 90px;
+    margin-bottom: 100px;
+    vertical-align: text-top;
+    
+
+}
+
+.footer_menu ul li{
+    display: block;
+    /* float: left; */
+    font-size: 12px;
+    text-align: left;
+    padding: 3px 0px;
+}
+
+.footer_menu ul li:hover{
+    text-decoration: underline;
+}
+
+#footer_menu__title{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.footer_awards{
+    background-color: #282828;
+    box-sizing: border-box;
+    padding: 30px 0px 40px 0px;
+}
+.footer_awards_inner{
+    width: 1210px;
+    margin: auto;
+}
+
+.footer_awards ul li{
+    display: inline-block;
+}
+
+.footer_copyright{
+    padding-top: 30px;
+}
+.footer_copyright_inner{
+    width: 1210px;
+    margin: auto;
+}
+.footer_copyright__menu{
+    font-size: 12px;
+    padding-top: 30px ;
+}
+
+.footer_copyright__menu li{
+    border-right: 1px solid #393939;
+    padding: 0px 10px ;
+    color: white;
+}
+
+.footer_copyright__menu li:hover{
+    text-decoration: underline;
+}
+
+.footer_copyright__menu li:last-child{
+    border-right: 0;
+
+}
+
+.footer_copyright__menu li:first-child a{
+    color: #00b050 ;
+    font-weight: bold;
+}
+
+.footer_copyright_btn{
+    /* display: block; */
+    /* width: 100%; */
+    /* margin: auto; */
+    padding-top: 13px;
+    text-align: center;
+    /* margin: auto; */
+}
+
+.footer_copyright_btn a{
+    /* margin: auto; */
+    display: inline-block;
+
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 7px 17px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.footer_copyright_btn a:hover{
+    text-decoration: underline;
+}
+
+.footer_copyright_bottom{
+    width: 100%;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.footer_copyright_inner p{
+    color: #999;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    margin: 20px 0px 10px 0px;
+}
+
+
 
