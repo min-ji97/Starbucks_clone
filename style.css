@@ -57,7 +57,6 @@ ul, li{
 }
 .inner{
     width: 1100px;
-    /* background-color: rgb(255, 151, 151); */
     margin: auto;
 }
 
@@ -94,11 +93,12 @@ ul, li{
 .nav-menu{
     position: absolute;
     /* display: block; */
+    width: 100%;
     top: 55px;
+    left: 0;
     margin-top: 10px;
-    float: right;
-    
 
+    /* float: right; */
     /* width: 100%; */
     /* left: 0; */
     /* margin: 0 auto; */
@@ -109,6 +109,7 @@ ul, li{
       /* left: 0; */
     /* font-size: 15px; */
 }
+
 
 .nav-menu ul{
     float: right;
@@ -144,8 +145,7 @@ ul, li{
 }
 
 .nav-menu ul li:hover .sub-menu{
-    opacity: 1;
-    
+    /* opacity: 1; */
     /* display: block; */
     max-height: 100vh;
     transition: all ease 2s;
@@ -158,8 +158,10 @@ ul, li{
     overflow: hidden;
     background-color: #2c2a29;
     position: absolute;
+    /* width: auto; */
     width: 100vw;
-    left: -410px;
+    /* left: -410px; */
+    left: 0;
     top: 55px;
     color: white;
     margin: auto;
@@ -167,7 +169,7 @@ ul, li{
     /* padding-top: 20px ; */
 }
 .sub-menu-main ul li:hover{
-    
+
     color: #555;
     /* padding: 5px; */
     /* font-size: 12px; */
@@ -196,6 +198,7 @@ ul, li{
 
 .sub-menu-text{
     display: inline-block;
+    margin-bottom: 5px;
     min-height: 30px;
     width: 100%;
     /* margin: auto; */
