@@ -271,13 +271,26 @@ ul, li{
 
 
 .new_spring__title {
+    opacity: 0;
     /* display: inline-block; */
     margin: 30px;
     top: 30px;
     left: -27px;
-}
+    /* opacity: 0; */
+    /* animation: fadein 0.5s; */
+    /* animation-duration: 4; */
+ }
+/* @keyframes fadein { 
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+} */
 
 .new_spring__detail{
+    opacity: 0;
     width: 355px;
     text-align: center;
     top: 254px;
@@ -293,6 +306,9 @@ ul, li{
     padding: 10px;
     color: #e95a87;
     cursor: pointer;
+    /* animation: fadein 0.5s; */
+    /* opacity: 0; */
+    /* animation-duration : 1s; */
     /* margin: 0 auto; */
 }
 
@@ -304,18 +320,29 @@ ul, li{
 
 
 .new_spring__menus div:nth-child(1) img{
+    opacity: 0;
     top: 41px;
     left: 442px;
+    /* animation: fadein 0.5s;
+    animation-timing-function: step-end ;
+    animation-duration: 1s; */
 }
-
+        
 .new_spring__menus div:nth-child(2) img{
+    opacity: 0;
     top: 208px;
     left: 195px;
+    /* animation: fadein 1s;
+    animation-timing-function: step-end ;
+    animation-duration: 2s; */
 }
 
 .new_spring__menus div:nth-child(3) img{
+    opacity: 0;
     top: 118px;
     left: 832px;
+    /* animation: fadein 1s;
+    animation-duration: 3s; */
 }
 
 /* 공지사항 및 프로모션 */
