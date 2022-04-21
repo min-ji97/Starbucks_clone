@@ -276,18 +276,8 @@ ul, li{
     margin: 30px;
     top: 30px;
     left: -27px;
-    /* opacity: 0; */
-    /* animation: fadein 0.5s; */
-    /* animation-duration: 4; */
+
  }
-/* @keyframes fadein { 
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-} */
 
 .new_spring__detail{
     opacity: 0;
@@ -306,43 +296,29 @@ ul, li{
     padding: 10px;
     color: #e95a87;
     cursor: pointer;
-    /* animation: fadein 0.5s; */
-    /* opacity: 0; */
-    /* animation-duration : 1s; */
-    /* margin: 0 auto; */
 }
 
 .new_spring__detail button:hover{
     text-decoration: underline;
 }
-    /* transition: background-color .5s; */
-    /* -webkit-transition: background-color .5s; */
 
 
 .new_spring__menus div:nth-child(1) img{
     opacity: 0;
     top: 41px;
     left: 442px;
-    /* animation: fadein 0.5s;
-    animation-timing-function: step-end ;
-    animation-duration: 1s; */
 }
         
 .new_spring__menus div:nth-child(2) img{
     opacity: 0;
     top: 208px;
     left: 195px;
-    /* animation: fadein 1s;
-    animation-timing-function: step-end ;
-    animation-duration: 2s; */
 }
 
 .new_spring__menus div:nth-child(3) img{
     opacity: 0;
     top: 118px;
     left: 832px;
-    /* animation: fadein 1s;
-    animation-duration: 3s; */
 }
 
 /* 공지사항 및 프로모션 */
@@ -352,8 +328,6 @@ ul, li{
     display: block;
     position: relative;
 }
-
-
 
 .notice_box_left{
     width: 55%;
@@ -665,14 +639,20 @@ ul, li{
     /* margin: 20px; */
     position: relative;
     top: 93px;
-    left: 169px;
+    left: -800px;
+    z-index: 1;
+    opacity: 0;
+    /* -700px이였다가 효과후 169px */
 }
 
 .spring_season_blend_txt { 
     position: relative;
     display: inline-block;
     top: -235px;
-    left: 629px;
+    left: 1700px;
+    z-index: 1;
+    opacity: 0;
+    /* 1200px 효과 후 629px */
 }
 
 .spring_season_blend_txt a{
