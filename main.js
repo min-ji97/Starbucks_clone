@@ -3,10 +3,10 @@
 // 봄 맞이 새 메뉴 출시 __ 사진 순차적으로 출력
 
 
-const fadeIn = document.querySelectorAll('.new_spring__title , .new_spring__menus div:nth-child(1) img ,.new_spring__menus div:nth-child(2) img,.new_spring__menus div:nth-child(3) img, .new_spring__detail');
+const fadeInSpringClass = document.querySelectorAll('.new_spring__title , .new_spring__menus div:nth-child(1) img ,.new_spring__menus div:nth-child(2) img,.new_spring__menus div:nth-child(3) img, .new_spring__detail');
 
 // gsap.to(요소, 지속시간, 옵션);
-fadeIn.forEach(( item , index )=>{
+fadeInSpringClass.forEach(( item , index )=>{
     gsap.to(item, 1 ,{
         delay: (index + 1) * 0.7,
         opacity: 1
@@ -15,16 +15,15 @@ fadeIn.forEach(( item , index )=>{
 
 // 공지사항 및 프로모션
 // 
-const dd = document.querySelector('.promotion_box_add_btn');
+// const dd = document.querySelector('.promotion_box_add_btn');
 
 
 
-
-// 스타벅스 스프링 시즌 원두
 
 window.addEventListener("scroll",(e)=>{
     let scrollY = this.scrollY;
-    if( scrollY >= 200){
+    // console.log(scrollY);
+    if( scrollY >= 200){ // 스타벅스 스프링 시즌 원두
         gsap.to('.spring_season_blend_img img', 1.8, {
             x: 969,
             delay: 0.3,
@@ -52,8 +51,19 @@ window.addEventListener("scroll",(e)=>{
         // dd.style.left = '-800px';
         // ss.style.left = '1700px';
     }
+    
+    
+    if(scrollY > 800){ // 인도네시아 워스트 자바 
+        gsap.to('.indonesia_coffee_img ', 2 ,{
+            opacity : 1
+        })
+    
+    }
 });
 //spring_season_blend_img
 
 
+
+
+   
 

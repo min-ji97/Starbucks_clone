@@ -6,7 +6,7 @@
 }
 
 body{
-    overflow-x: hidden;
+    overflow-x: hidden; 
     /* padding-top: 230px; */
 }
 
@@ -677,33 +677,36 @@ ul, li{
 .indonesia_page{
     background: url(images/인도네시아_자바/reserve_2022_indonesia_visual_bg.jpg);
     position: relative;
+    overflow: hidden ;
+
+    
 }
 
-.indonesia_page::before{
-    /* background: no-repeat url(images/인도네시아_자바/reserve_2022_indonesia_leaf1.png); */
+/* .indonesia_page::before{
+   
     content: url(images/인도네시아_자바/reserve_2022_indonesia_leaf1.png);
     position: absolute;
+  
     top: 127px;
     left: 0;
-    /* width: 50%; */
-    /* height: 100%; */
+   
 }
 
 .indonesia_page::after{
-    /* background: no-repeat url(images/인도네시아_자바/reserve_2022_indonesia_leaf2.png); */
+    
     content: url(images/인도네시아_자바/reserve_2022_indonesia_leaf2.png);
     position: absolute;
+   
     top: 99px;
     right: 0;
-    /* width: 50%; */
-    /* height: 100%; */
+  
 
-}
+} */
 
 .indonesia_page_inner{
     position: relative;
     height: 400px;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* margin: auto; */
 }
 
@@ -713,15 +716,29 @@ ul, li{
     margin-left: -2px;
 }
 
-.indonesia_coffee_img {
+.indonesia_coffee_img::before{
+    content: url(images/인도네시아_자바/reserve_2022_indonesia_leaf1.png);
     position: absolute;
-    /* max-width: none; */
+    top: 127px;
+    left: 0;
+}
+.indonesia_coffee_img::after{
+    content: url(images/인도네시아_자바/reserve_2022_indonesia_leaf2.png);
+    position: absolute;
+    top: 99px;
+    right: 0;
+
+}
+.indonesia_coffee_img {
+    opacity: 0;
+    position: absolute;
     left: -478px;
     bottom: -4px;
 
 }
 
 .indonesia_coffee_btn{
+    position: relative;
     /* width: 100px; */
     margin-top: 37px;
     margin-left: 256px;
@@ -736,6 +753,10 @@ ul, li{
     border-radius: 5px;
     /* width: 100px; */
     padding: 8px 23px;
+
+    order: 1;
+    cursor: pointer;
+    /* z-index: 5; */
 }
 
 .indonesia_coffee_btn a:hover{
@@ -750,6 +771,7 @@ ul, li{
 .favorite_page{
     background: center no-repeat fixed url(images/pick_your/fav_prod_bg_new.jpg);
     height: 800px;
+    /* margin: 0; */
 }
 .favorite_page_inner{
     position: relative;
