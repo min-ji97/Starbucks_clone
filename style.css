@@ -682,27 +682,6 @@ ul, li{
     
 }
 
-/* .indonesia_page::before{
-   
-    content: url(images/인도네시아_자바/reserve_2022_indonesia_leaf1.png);
-    position: absolute;
-  
-    top: 127px;
-    left: 0;
-   
-}
-
-.indonesia_page::after{
-    
-    content: url(images/인도네시아_자바/reserve_2022_indonesia_leaf2.png);
-    position: absolute;
-   
-    top: 99px;
-    right: 0;
-  
-
-} */
-
 .indonesia_page_inner{
     position: relative;
     height: 400px;
@@ -771,21 +750,28 @@ ul, li{
 .favorite_page{
     background: center no-repeat fixed url(images/pick_your/fav_prod_bg_new.jpg);
     height: 800px;
-    /* margin: 0; */
+    background-size: cover;
+    
+    
+    /* bottom: 0; */
 }
 .favorite_page_inner{
     position: relative;
 }
+
 .favorite_page_logo{
     position: absolute;
     top: 129px;
-    left: 100px;
+    left: -900px;
+    /* -900px ~ 100px  */
 }
 
 .favorite_page_txt{
     position: absolute;
     top: 383px;
-    left: 0;
+    left: -900px;
+    /* 원래는 left : 0 */
+    /* -900px ~ -6px */
 }
 
 .favorite_page_img{
@@ -795,7 +781,9 @@ ul, li{
 
 }
 
+
 .favorite_page_btn a{
+    opacity: 0;
     color: white;
     position: absolute;
     top: 575px;

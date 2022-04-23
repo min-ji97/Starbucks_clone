@@ -57,8 +57,42 @@ window.addEventListener("scroll",(e)=>{
         gsap.to('.indonesia_coffee_img ', 2 ,{
             opacity : 1
         })
-    
     }
+
+    // favorite 
+    if(scrollY > 1443){ // 이미지 보여줌
+
+        gsap.to('.favorite_page_btn a',4,{
+            opacity : 1
+        });
+
+        // gsap.to('.favorite_page_logo',2.5,{
+        //     x : 1000,
+        //     ease: "easeIn"
+        // });
+        // gsap.to('.favorite_page_txt',2.5,{
+        //     x : 906,
+        //     ease : "ease",
+        // });
+        
+        gsap.fromTo('.favorite_page_logo',2.5,{ left : -900 },{ left : 100 },{
+            ease: "easeIn"
+        });
+        gsap.fromTo('.favorite_page_txt',2.5,{ left : -900 },{ left: -6},{
+            ease : "ease",
+        });
+
+    }else{ // 이미지 들어가..!
+      
+        gsap.to('.favorite_page_logo',2.5,{ left : 100 },{ left : -900  },{
+            ease: "easeIn"
+        });
+        gsap.fromTo('.favorite_page_txt',2.5,{ left : -6 },{ left : -900 },{
+            ease : "ease",
+        });
+    }
+
+
 });
 //spring_season_blend_img
 
@@ -67,3 +101,5 @@ window.addEventListener("scroll",(e)=>{
 
    
 
+// 1443 일 때 사진 보여줌 
+// 1343 일 때 사진 들어가..!
