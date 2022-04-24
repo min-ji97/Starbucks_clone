@@ -21,35 +21,73 @@ fadeInSpringClass.forEach(( item , index )=>{
 
 
 // 스타벅스 스프링 시즌 원두
-gsap.to('.spring_season_blend_img img',1.8,{
+gsap.to('.spring_season_blend_img img',2,{
     scrollTrigger: {
         trigger: ".spring_season_blend_img img",
         start: 'top 95%',
-        toggleActions:'restart none none none',
+        toggleActions:'play none none reverse',
     },
     x: 969,
     delay: 0.3,
     opacity: 1
 });
 
-gsap.to('.spring_season_blend_txt',1.8,{
+gsap.to('.spring_season_blend_txt',2,{
     scrollTrigger: {
         trigger: ".spring_season_blend_txt",
         start: 'top 95%',
-        toggleActions:'restart none none none',
+        toggleActions:'play none none reverse',
     },
-    x: -1071,
+    x: -1071,   
     delay: 0.3,
     opacity: 1
 });
 
 // favorite 
 
+
+// gsap.set('.favorite_page_logo',{
+//     opacity: 0,
+//     x: -1000,
+// });
+
+// ScrollTrigger.create({
+//     trigger : '.favorite_page_logo',
+//         start: 'bottom bottom',
+//         // toggleActions : 'restart none reverse none',
+//         markers: {
+//             startColor: 'yellow',
+//             endColor: 'black',
+//             fontSize: '4rem',
+//             indent: 200
+//         },
+//         onEnter: () => gsap.to('.favorite_page_logo',3,{
+//             x: 1000,
+//             opacity: 1,
+//             // stagger: 3,
+//         }),
+
+//         onLeave: () => gsap.to('.favorite_page_logo', {
+//             x: -1000,
+//             opacity: 0,
+//           }),
+//         onEnterBack: () => gsap.to('.favorite_page_logo', {
+//             x: 1000,
+//             opacity: 1,
+            
+//         }),
+//         onLeaveBack: () => gsap.to('.favorite_page_logo',4, {
+//         x: -1000,
+//         opacity: 0,
+//         }),
+
+// });
+
 gsap.to('.favorite_page_logo',3,{
     scrollTrigger: {
         trigger : '.favorite_page_logo',
         start: 'bottom bottom',
-        toggleActions : 'restart none none none',
+        toggleActions : 'play none none reverse',
         // markers: {
         //     startColor: 'yellow',
         //     endColor: 'black',
@@ -59,18 +97,27 @@ gsap.to('.favorite_page_logo',3,{
     
     },
     x: 1000,
+    opacity : 1,
 });
 
 gsap.to('.favorite_page_txt',3,{
     scrollTrigger: {
         trigger : '.favorite_page_logo',
         start: 'bottom bottom',
-        toggleActions : 'restart none none none',
+        toggleActions : 'play none none reverse',
      
     },
     x: 906,
 });
 
+gsap.to('.favorite_page_btn a',4,{
+    scrollTrigger: {
+        trigger : '.favorite_page_logo',
+        start: 'bottom bottom',
+        toggleActions : 'play none none none',
+    },
+    opacity: 1,
+});
 
 
 window.addEventListener("scroll",(e)=>{
@@ -108,15 +155,11 @@ window.addEventListener("scroll",(e)=>{
     
 
 
-
-
-
-
     ///////////
     if(scrollY > 800){ // 인도네시아 워스트 자바 
         gsap.to('.indonesia_coffee_img ', 2 ,{
             opacity : 1
-        })
+        });
     }
 
     // favorite 
@@ -158,8 +201,46 @@ window.addEventListener("scroll",(e)=>{
 
 
 
+// 리저브 매거진 
+//reserve_magazine_page_img
+
+gsap.set('.reserve_magazine_page_img',{
+    opacity: 0,
+});
+gsap.to('.reserve_magazine_page_img', 2 ,{
+
+    scrollTrigger: {
+        trigger: '.reserve_magazine_page_img',
+        start: 'top 80%', 
+        toggleActions : 'play none none none',
+    },
+    opacity : 1,
+    delay: 100,
+});
 
    
+// 매장 찾기 
 
-// 1443 일 때 사진 보여줌 
-// 1343 일 때 사진 들어가..!
+const findStoreImgClass = document.querySelectorAll('.find_store_page_img_1, .find_store_page_img_2 ');
+
+gsap.set(findStoreImgClass,{
+    opacity: 0
+});
+gsap.to(findStoreImgClass,3,{
+    scrollTrigger: {
+        trigger : '.find_store_page_img_2',
+        start : 'top bottom',
+        toggleActions : 'play none none none',
+        markers: {
+                startColor: 'red',
+                endColor: 'black',
+                fontSize: '2rem',
+                indent: 200
+            }
+    },
+    opacity : 1,
+});
+
+//
+
+// gsap.utils.toArray()
