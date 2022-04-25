@@ -438,13 +438,13 @@ ul, li{
     line-height: 50px;
     font-weight: bold;
     vertical-align: top;
-    margin-top: 13px;
+    margin-top: 7px;
 }
 
-.promotion_box img{
+.promotion_box_add_btn{
     display: inline-block;
-    margin: 20px 0px 20px 50px;
-
+    margin: 12px 0px 20px 50px;
+    cursor: pointer;
 }
 
 /* 프로모션 배너 보여주기 */
@@ -457,6 +457,7 @@ ul, li{
     height: 658px;
     position: relative;
     overflow: hidden;
+    transition: all ease 3s;
 }
 .promotion_banners ul{
    
@@ -859,11 +860,13 @@ ul, li{
 .find_store_page{
     background: url(images/스타벅스_매장/store_bg.jpg);
     height: 400px;
+    overflow: hidden;
 }
 .find_store_page_inner{
     position: relative;
     /* width: 100%; */
-    overflow: hidden;
+    
+    /* overflow-x: visible; */
     height: 100%;
 }
 .find_store_page_img_1{
@@ -893,12 +896,15 @@ ul, li{
 .find_store_page_txt_1{
     position: absolute;
     top: 103px;
+    /* right: -500px; */
     right: 84px;
+    
 
 }
 .find_store_page_txt_2{
     position: absolute;
     top: 174px;
+    /* right: -518px; */
     right: 102px;
 
 }
@@ -906,19 +912,20 @@ ul, li{
     position: absolute;
    
     top: 258px;
+    /* right: -1270px; */
     right: 336px;
 
-     font-size: 15px;
-     border: 2px solid black;
-     border-radius: 5px;
-     box-sizing: border-box;
-     padding: 8px 31px;
-     color: black;
-     /* width: 50%; */
-     text-align: center;
-     /* margin-left: 230px; */
-     /* margin-right: 80px; */
-     /* float: right; */
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 8px 31px;
+    color: black;
+    /* width: 50%; */
+    text-align: center;
+    /* margin-left: 230px; */
+    /* margin-right: 80px; */
+    /* float: right; */
 }
 
 .find_store_page_btn a:hover{

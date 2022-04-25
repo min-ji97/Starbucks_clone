@@ -231,12 +231,7 @@ gsap.to(findStoreImgClass,3,{
         trigger : '.find_store_page_img_2',
         start : 'top bottom',
         toggleActions : 'play none none none',
-        markers: {
-                startColor: 'red',
-                endColor: 'black',
-                fontSize: '2rem',
-                indent: 200
-            }
+        
     },
     opacity : 1,
 });
@@ -244,3 +239,49 @@ gsap.to(findStoreImgClass,3,{
 //
 
 // gsap.utils.toArray()
+// 타임라인을 사용하면 되지 않을까...!!!!!!!!!!!!
+// forEach문을 사용해서.....delay 를 줘서..?!
+
+
+const findStoreTxtClass = document.querySelectorAll('.find_store_page_txt_1 , .find_store_page_txt_2 , .find_store_page_btn');
+
+findStoreTxtClass.forEach((item, index)=>{
+
+    gsap.set(item,{
+        x: 1000,
+        opacity: 0,
+    });
+
+    const t1 = gsap.timeline({
+
+        scrollTrigger:{
+            trigger: '.find_store_page_txt_2',
+            start: 'top bottom',
+            toggleActions : 'play none none reverse',
+        },
+    });
+
+    t1.to(item, 2.5 ,{
+        x: 1,
+        opacity: 1,
+        delay: index  * 0.2,
+    })
+    // tl.to(item,3,{
+    //     scrollTrigger : {
+    //         trigger: '.find_store_page_txt_2',
+    //         start: 'top bottom',
+    //         toggleActions : 'play none none reverse',
+    
+    //         markers: {
+    //             startColor: 'red',
+    //             endColor: 'black',
+    //             fontSize: '2rem',
+    //             indent: 200
+    //         }
+    //     },
+    //     x:-1000,
+    //     opacity: 1,
+    // });
+
+});
+
