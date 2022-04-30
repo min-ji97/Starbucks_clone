@@ -362,8 +362,6 @@ ul, li{
     color: white;
 
     /* margin-top: 10px; */
-    
-  
     /* line-height: 20px; */
     /* display: inline-block; */
     /* color: white; */
@@ -380,18 +378,26 @@ ul, li{
    
 }
 .notice_list{
-   display: inline-block;
+   /* display: inline-block; */
+   /* display: none; */
    /* width: 100px; */
- 
     
 }
+.notice_list li{
+    display: inline-block;
+    display: #ffffff;
+}
+/* .ee{
+    display: inline-block;
+    display: #ffffff;
+} */
 .notice_box a{
     /* width: 20px;
     /* float: right; */
     /* line-height: 30px; */
  
     /* width: 50px;
-    height: 50px; */
+    height: 50px; */         
     
     /* display: inline-block;
     margin-left: 30px;  */
@@ -408,18 +414,33 @@ ul, li{
 
 .notice_box ul li{
     display: none;
+    /* line-height: 0px; */
     overflow: hidden;
-    /* height: 60px; */
+    /* height: 60%; */
+
     font-size: 13px;
     width: 300px;
+    transition: all ease 3s; 
 }
+
 .notice_box ul li:hover{
     text-decoration: underline;
    
 }
+
 #active{
     display: inline;
     color: #ffffff;
+    height: 20px;
+
+    /* line-height: 1; */
+    box-sizing: border-box;
+    padding: 10px;
+    /* background-color: red; */
+    /* background-color: #111; */
+    /* max-height: 60px; */
+    transition: all ease 3s;
+    animation-duration: 1s;
 }
 
 .promotion_box{
@@ -450,17 +471,17 @@ ul, li{
 /* 프로모션 배너 보여주기 */
 .promotion_banners{
     /* 누르면 display 보이게 해 줄 예정..!! */
-    display: none; 
+    /* display: none;  */
     background-color: #f6f5ef;
     /* margin-top: 40px; */
-    padding-top: 40px;
-    height: 658px;
+    /* padding-top: 40px; */
+    height: 0px;
     position: relative;
     overflow: hidden;
-    transition: all ease 3s;
+    transition: all ease 1s;
 }
 .promotion_banners ul{
-   
+    padding-top: 40px;
     white-space: nowrap;
 }
 

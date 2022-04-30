@@ -285,3 +285,95 @@ findStoreTxtClass.forEach((item, index)=>{
 
 });
 
+// 스타벅스 공지사항 ============================================
+// li 태그에 순차적으로 id = "active" 줬다 뺏다 해주기..! 그럼 될 듯?!?!
+
+const noticeLiClass = document.querySelectorAll('.notice_box ul li');
+// 비동기작업 순차실행과 병렬 실행 공부..!!
+
+// console.log('되냐?! 쿠ㅜ',noticeLiClass[0]);
+
+// for (let i =0; i < noticeLiClass.length ; i++){
+//     // setInterval(()=>{
+//     //     console.log(i);
+//     // },1000);
+    
+
+// }
+// console.log(noticeLiClass[0].innerHTML);
+
+
+let k = 0;
+while( k < 10){
+    for(let i=0; i < noticeLiClass.length ; i++){
+        ( x=>{
+            setTimeout(()=>{
+                console.log(noticeLiClass[x]);
+                noticeLiClass[x].id = 'active';
+               if(x===0){
+
+               }else{
+                noticeLiClass[x-1].removeAttribute('id');
+               }
+            },2000*x);
+            
+        })(i) 
+    }
+    break;
+}
+
+// setInterval() 사용
+// let i = 0
+// console.log(i++)
+// let interval = setInterval(() => {
+//  console.log(i++)
+//  if(i >= 4) clearInterval(interval)
+// }, 1000);
+
+
+
+
+noticeLiClass.forEach((item, index)=>{
+    
+    // console.log('?',item.innerHTML);
+  
+    // setInterval(()=>{
+    //     console.log('5초마다 반복함..! => ',item[index].innerHTML);
+        
+
+    // },5000);
+
+});
+
+
+
+
+// 스타벅스 프로모션 ============================================
+//  버튼을 클릭하면 -> 화살표 이미지 바뀌고 프로모션 배너 보여주기..! 
+//  한번 더 클릭  -> 화살표 이미지 바뀌고 프로모션 배너 안보여주기..!
+
+
+
+function promotionBtnToggle(){
+    console.log('버튼을 클릭햇땀..!!');
+    const btn = document.querySelector('.promotion_box_add_btn');
+    
+    console.log();
+    if(btn.getAttribute('value') === "down"){ // 화살표를 업 이미지로 바꿔주고 프로모션 배너 보여주기
+
+        
+
+        btn.setAttribute('value','up');
+        btn.setAttribute('src','images/공지사항및프로모션/btn_prom_up.png');
+        document.querySelector('.promotion_banners').style.height = '658px';
+        console.log('아래 화살표를 눌렀음~~~ 이제 value는 up이 떠야함..!',btn.getAttribute('value'));
+
+
+    }else if(btn.getAttribute('value') === "up"){ //화살표를 다운이미지로 바꿔주고 프로모션 배너 지워주기
+
+        btn.setAttribute('value','down');
+        btn.setAttribute('src','images/공지사항및프로모션/btn_prom_down.png');
+        console.log('위 화살표를 눌렀음~~~ 이제 value는 down이 떠야함..!',btn.getAttribute('value'));
+        document.querySelector('.promotion_banners').style.height = '0px';
+    }
+};
