@@ -310,7 +310,7 @@ while( k < 10){
             setTimeout(()=>{
                 console.log(noticeLiClass[x]);
                 noticeLiClass[x].id = 'active';
-               if(x===0){
+               if(x===0){   
 
                }else{
                 noticeLiClass[x-1].removeAttribute('id');
@@ -322,6 +322,26 @@ while( k < 10){
     break;
 }
 
+// setInterval(()=>{
+
+//     for(let i=0; i < noticeLiClass.length ; i++){
+//         ( x=>{
+//             setTimeout(()=>{
+//                 console.log(noticeLiClass[x]);
+//                 noticeLiClass[x].id = 'active';
+//                if(x===0){
+                   
+//                }else{
+//                 noticeLiClass[x-1].removeAttribute('id');
+//                }
+//             },2000*x);
+            
+//         })(i) 
+//     }
+
+// },3000);
+
+/////////////////////////////////////////
 // setInterval() 사용
 // let i = 0
 // console.log(i++)
@@ -365,7 +385,8 @@ function promotionBtnToggle(){
 
         btn.setAttribute('value','up');
         btn.setAttribute('src','images/공지사항및프로모션/btn_prom_up.png');
-        document.querySelector('.promotion_banners').style.height = '658px';
+        document.querySelector('.promotion_banners').style.height = '750px';
+        // 수정전 height = '658px'
         console.log('아래 화살표를 눌렀음~~~ 이제 value는 up이 떠야함..!',btn.getAttribute('value'));
 
 
@@ -377,3 +398,30 @@ function promotionBtnToggle(){
         document.querySelector('.promotion_banners').style.height = '0px';
     }
 };
+
+
+
+///////////// 슬라이드 !!! 
+
+var nextBtn = document.querySelector('.arrow_right');
+var prevBtn = document.querySelector('.arrow_left'); 
+
+var sliderFirst = document.querySelector('.slider_list:nth-child(1)');
+var sliderMiddle = document.querySelector('.slider_list:nth-child(2)');
+var sliderLast = document.querySelector('.slider_list:nth-child(3)');
+
+prevBtn.addEventListener('click',()=>{
+
+    sliderFirst.style.transform = 'translate(100%,0)';
+    sliderMiddle.style.transform = 'translate(-210%,0)';
+    sliderLast.style.transform = 'translate(-210%,0)';
+});
+
+nextBtn.addEventListener('click',()=>{
+
+    sliderFirst.style.transform = 'translate(110%,0)';
+    sliderMiddle.style.transform = 'translate(-200%,0)';
+    sliderLast.style.transform = 'translate(-200%,0)';
+
+
+});
