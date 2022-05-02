@@ -403,25 +403,25 @@ function promotionBtnToggle(){
 
 ///////////// 슬라이드 !!! 
 
-var nextBtn = document.querySelector('.arrow_right');
-var prevBtn = document.querySelector('.arrow_left'); 
+// var nextBtn = document.querySelector('.arrow_right');
+// var prevBtn = document.querySelector('.arrow_left'); 
 
-var sliderFirst = document.querySelector('.slider_list:nth-child(1)');
-var sliderMiddle = document.querySelector('.slider_list:nth-child(2)');
-var sliderLast = document.querySelector('.slider_list:nth-child(3)');
+// var sliderFirst = document.querySelector('.slider_list:nth-child(1)');
+// var sliderMiddle = document.querySelector('.slider_list:nth-child(2)');
+// var sliderLast = document.querySelector('.slider_list:nth-child(3)');
 
-prevBtn.addEventListener('click',()=>{
+// prevBtn.addEventListener('click',()=>{
 
-    sliderFirst.style.transform = 'translate(100%,0)';
-    sliderMiddle.style.transform = 'translate(-210%,0)';
-    sliderLast.style.transform = 'translate(-210%,0)';
-});
+//     sliderFirst.style.transform = 'translate(100%,0)';
+//     sliderMiddle.style.transform = 'translate(-210%,0)';
+//     sliderLast.style.transform = 'translate(-210%,0)';
+// });
 
-nextBtn.addEventListener('click',()=>{
+// nextBtn.addEventListener('click',()=>{
 
-    sliderFirst.style.transform = 'translate(110%,0)';
-    sliderMiddle.style.transform = 'translate(-200%,0)';
-    sliderLast.style.transform = 'translate(-200%,0)';
+//     sliderFirst.style.transform = 'translate(110%,0)';
+//     sliderMiddle.style.transform = 'translate(-200%,0)';
+//     sliderLast.style.transform = 'translate(-200%,0)';
 
 
-});
+// });

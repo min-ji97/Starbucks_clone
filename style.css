@@ -515,7 +515,10 @@ ul, li{
     transform: translate(-100%,0);
 } */
 
-.slider_list:nth-child(1){
+/* .slider_list 이름 slide_item으로 바꿈..! */
+
+
+/* .slider_list:nth-child(1){
     transform: translate(-100%,0);
     order :2;
 }
@@ -526,11 +529,11 @@ ul, li{
 .slider_list:nth-child(3){
     transform: translate(-100%,0);
     order :1;
-}
+} */
 
-.slider_list{
-    /* order : 3 */
-}
+/* .slider_list{
+    order : 3
+} */
 
 
 
@@ -610,10 +613,12 @@ ul, li{
 .slider_controller_page{
     
 }
+.slider_controller_paginations{
 
-.slider_controller_page .page_1,
-.slider_controller_page .page_2,
-.slider_controller_page .page_3{
+}
+.pagination_1,
+.pagination_2,
+.pagination_3{
     background: url(images/프로모션더보기/main_prom_off.png);
     position: relative;
     z-index: 5 ;
