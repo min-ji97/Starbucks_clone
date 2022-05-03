@@ -481,7 +481,7 @@ ul, li{
     transition: all ease 1s;
 }
 
-.promotion_banners_list{
+.promotion_slide_list{
     width: 1100px;
     text-align: center;
     margin: auto;
@@ -504,29 +504,29 @@ ul, li{
 #active_slider{
     opacity: 1;
    
-    transform: translate(-100%,0);
+    /* transform: translate(-100%,0); */
 }
 
-/* .promotion_banners ul li:first-child{
+/* .promotion_slide_list ul li:first-child{
     transform: translate(-100%,0);
 
 }
-.promotion_banners ul li:last-child{
+.promotion_slide_list ul li:last-child{
     transform: translate(-100%,0);
 } */
 
 /* .slider_list 이름 slide_item으로 바꿈..! */
 
 
-/* .slider_list:nth-child(1){
+.slide_item{
     transform: translate(-100%,0);
-    order :2;
+
 }
-.slider_list:nth-child(2){
+/* .slide_item:nth-child(2){
     transform: translate(-100%,0);
     order :3;
 }
-.slider_list:nth-child(3){
+.slide_item:nth-child(3){
     transform: translate(-100%,0);
     order :1;
 } */
