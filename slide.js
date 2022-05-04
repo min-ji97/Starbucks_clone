@@ -41,26 +41,93 @@ prevBtn.addEventListener('click',()=>{
 //오른쪽 버튼 클릭 시
 nextBtn.addEventListener('click',()=>{
     selected += 1;
+    
+    // slideList.style.transform = `translate(${selected*100}px,0)`; 
+
+    console.log('셀렉티드값이 몇인데?! => ',selected);
+    if(selected === 1){
+        slideItems[0].style.transform = 'translate(1705px,0)'; // 맨 뒤로 이동
+        slideList.style.transform = 'translate(-839px,0)'; // 전체 앞으로 한칸씩 이동
+
+        slideItems[1].style.opacity = '0.5';
+        slideItems[2].style.opacity = '1';
+
+        slideList.style.transition = 'all ease 2s';
+         // slideItems[0].style.transform = 'translate(860px,0)';
+        // slideItems[1].style.transform = 'translate(-1678px,0)'; 
+        // slideItems[2].style.transform = 'translate(-1678px,0)'; 
+    }else if(selected === 2){
+        // [1]은 뒤로 한칸 [0]은 뒤로 한칸 [2]는 앞으로 두칸
+        slideItems[0].style.transform = 'translate(839px,0)'; 
+        slideItems[1].style.transform = 'translate(839px,0)'; 
+        slideItems[2].style.transform = 'translate(-1678px,0)'; 
+
+        slideItems[2].style.opacity = '0.5';
+        slideItems[0].style.opacity = '1';
+
+        slideList.style.transition = 'all ease 2s';
+
+    }else if(selected === 3){
+        // [select-2] 이 가운데 옴 이걸 opacity 1주면 될 듯
+        // 그냥 translate(0,0) 해주면 다 각자 제자리로 돌아오지 않을까아..?!?!? 하하하하하ㅏㅎ
+        slideList.style.transform = 'none';
+        slideItems[0].style.transform = 'translate(-839px,0)'; 
+        slideItems[1].style.transform = 'translate(-839px,0)'; 
+        slideItems[2].style.transform = 'translate(-839px,0)';
+
+        slideItems[0].style.opacity = '0.5';
+        slideItems[1].style.opacity = '1';
+
+        slideList.style.transition = 'all ease 2s';
+
+        
+        
+        selected = 0;
+    }
+    
+    
+    console.log('0번이 누구냐!! => ',slideItems[0]);
+    console.log('1번이 누구냐!! => ',slideItems[1]);
+    console.log('2번이 누구냐!! => ',slideItems[2]);
+
     if(selected === 3){
         selected = 0;
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // 
+
+    // if(selected === 3){
+    //     slideItems[0].style.transform = 'translate(210%,0)'; // 맨 뒤로 이동
+        
+    // }else{ //selected 가 1 또는 3( 0이됨 )
+    //     console.log('셀렉티드값이 몇인데?! => ',selected);
+    //     slideItems[selected-1].style.transform = 'translate(210%,0)'; // 맨 뒤로 이동
+
+    //     slideList.style.transform = 'translate(-33%,0)'; // 전체 앞으로 한칸씩 이동
+        
+    //     console.log('0번이 누구냐!! => ',slideItems[0]);
+    //     console.log('1번이 누구냐!! => ',slideItems[1]);
+    //     console.log('2번이 누구냐!! => ',slideItems[2]);
+        
+    // }
+
     
-
-    if(selected === 3){
-        slideItems[0].style.transform = 'translate(210%,0)'; // 맨 뒤로 이동
-        
-    }else{ //selected 가 1 또는 3( 0이됨 )
-        console.log('셀렉티드값이 몇인데?! => ',selected);
-        slideItems[selected-1].style.transform = 'translate(210%,0)'; // 맨 뒤로 이동
-        
-        console.log('0번이 누구냐!! => ',slideItems[0]);
-        console.log('1번이 누구냐!! => ',slideItems[1]);
-        console.log('2번이 누구냐!! => ',slideItems[2]);
-        
-    }
-
-    slideList.style.transform = 'translate(-33%,0)'; // 전체 앞으로 한칸씩 이동
     
 
 });

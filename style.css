@@ -502,7 +502,7 @@ ul, li{
   
 }
 #active_slider{
-    opacity: 1;
+    /* opacity: 1; */
    
     /* transform: translate(-100%,0); */
 }
@@ -521,6 +521,9 @@ ul, li{
 .slide_item{
     transform: translate(-100%,0);
 
+}
+.slide_item:nth-child(2){
+    opacity: 1;
 }
 /* .slide_item:nth-child(2){
     transform: translate(-100%,0);
