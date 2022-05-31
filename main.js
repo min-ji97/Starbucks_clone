@@ -430,3 +430,45 @@ function promotionBtnToggle(){
 
 
 // });
+
+
+//swiper를 이용한 슬라이드
+
+ // init Swiper:
+  var swiper = new Swiper('.swiper', {
+   // configure Swiper to use modules
+  // direction: 'vertical',
+    // slidesPerView: 3,
+
+    // slidesPerGroup: 3,
+    centeredSlides: true,
+    
+    slidesPerView: 'auto',
+    // spaceBetween: 30,
+    loop: true,
+    // loopFillGroupWithBlank: true,
+
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    //  modules: [Navigation, Pagination],
+    pagination: {
+        el : '.swiper-pagination',
+        clickable: true,
+    },
+
+    navigation: {
+        prevEl: '.arrow_left',
+        nextEl: '.arrow_right',
+    },
+    // scrollbar : {
+    //     el : '.swiper-scrollbar'
+    // },
+
+
+ });
+
+//  swiper.on('reachEnd', function(){
+//     swiper.autoplay = false;
+// })

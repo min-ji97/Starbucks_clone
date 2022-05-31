@@ -12,6 +12,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
 
+    
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/> -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
 </head>
 <body>
     <div id="wrap">
@@ -366,24 +371,38 @@
             </section>
             <!-- 프로모션 배너 보여주기 -->
             <section class="promotion_banners">
-                <div class="promotion_slide_list">
-                    <ul class="slide_list">
-                        <li class="slide_item">
+                <div class="promotion_slide_list swiper">
+                    <ul class="slide_list swiper-wrapper">
+                        <li class="slide_item swiper-slide">
                             <img src="images/프로모션더보기/Y7YBKr_20220404160419657.jpg" alt="">
                             <a href="/">자세히 보기</a>     
                         </li>
-                        <li id="active_slider" class="slide_item">
+                        <li class="slide_item swiper-slide">
                             <img src="images/프로모션더보기/wW63vb_20211231154557623.jpg" alt="">
                             <a href="/">자세히 보기</a>
                         </li>
-                        <li class="slide_item">
+                        <li class="slide_item swiper-slide">
                             <img src="images/프로모션더보기/jwr14l_20220321134209242.jpg" alt="">
                             <a href="/">자세히 보기</a>
                         </li>
                     </ul>
+                   
                 </div>
-            
+                <!-- <div class="slider_controller">
+                    <div class="slider_controller_btn"></div>
+                </div> -->
+                <div class="slider_controller_btn"></div>
 
+                <div class="swiper-pagination slider_controller"></div>
+
+                <!-- <div class="arrow_left swiper-button-prev"><img src="images/프로모션더보기/arrow_left_on.png" alt=""></div>
+                <div class="arrow_right swiper-button-next"><img src="images/프로모션더보기/arrow_right_on.png" alt=""></div> -->
+
+                <div class="arrow_inner">
+                    <div class="arrow_left"><img src="images/프로모션더보기/arrow_left_on.png" alt=""></div>
+                    <div class="arrow_right "><img src="images/프로모션더보기/arrow_right_on.png" alt=""></div>
+                </div>
+<!-- 
                 <div class="slider_controller">
                     <div class="slider_controller_btn"></div>
                     <div class="slider_controller_paginations">
@@ -391,12 +410,9 @@
                         <div class="pagination_2"></div>
                         <div class="pagination_3"></div>
                     </div>
-                </div>
-
-                <div class="arrow_inner">
-                    <div class="arrow_left"><img src="images/프로모션더보기/arrow_left_on.png" alt=""></div>
-                    <div class="arrow_right"><img src="images/프로모션더보기/arrow_right_on.png" alt=""></div>
-                </div>
+                </div> -->
+                
+               
                 
             </section>
             <!-- 스타벅스 리워드 -->
@@ -619,7 +635,7 @@
     </div>
 
     <script src="main.js"></script>
-    <script src="slide.js"></script>
+    <!-- <script src="slide.js"></script> -->
   
 </body>
 </html>

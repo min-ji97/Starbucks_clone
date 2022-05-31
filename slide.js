@@ -46,21 +46,46 @@ nextBtn.addEventListener('click',()=>{
 
     console.log('셀렉티드값이 몇인데?! => ',selected);
     if(selected === 1){
+        slideList.style.transform = 'none';
+        // slideList.resetTransform();
+
+       
         slideItems[0].style.transform = 'translate(1705px,0)'; // 맨 뒤로 이동
         slideList.style.transform = 'translate(-839px,0)'; // 전체 앞으로 한칸씩 이동
+        slideList.style.transition = 'all ease 2s';
+       
 
         slideItems[1].style.opacity = '0.5';
         slideItems[2].style.opacity = '1';
 
-        slideList.style.transition = 'all ease 2s';
-         // slideItems[0].style.transform = 'translate(860px,0)';
+        // slideItems[1].style.transform = 'translate(-839px,0)';
+        // slideItems[2].style.transform = 'translate(-839px,0)';
+        
+
+        // slideItems[0].style.opacity = '0'; // 사라졌다가 나타나게 해주려고
+        
+
+        
+        // slideItems[0].style.transform = 'translate(860px,0)';
         // slideItems[1].style.transform = 'translate(-1678px,0)'; 
         // slideItems[2].style.transform = 'translate(-1678px,0)'; 
+
+        // slideItems[0].style.transition = 'all step-end 2s';
+        // slideItems[0].style.opacity = '0.5';
+        
+        
+        // slideItems[2].style.transition = 'all ease 2s';
     }else if(selected === 2){
         // [1]은 뒤로 한칸 [0]은 뒤로 한칸 [2]는 앞으로 두칸
-        slideItems[0].style.transform = 'translate(839px,0)'; 
-        slideItems[1].style.transform = 'translate(839px,0)'; 
-        slideItems[2].style.transform = 'translate(-1678px,0)'; 
+       
+
+        slideItems[1].style.transform = 'translate(1705px,0)'; // 맨 뒤로 이동
+        slideList.style.transform = 'translate(-1678px,0)'; // 전체 앞으로 한칸씩 이동
+
+
+        // slideItems[0].style.transform = 'translate(839px,0)'; 
+        // slideItems[1].style.transform = 'translate(839px,0)'; 
+        // slideItems[2].style.transform = 'translate(-1678px,0)'; 
 
         slideItems[2].style.opacity = '0.5';
         slideItems[0].style.opacity = '1';
@@ -70,10 +95,15 @@ nextBtn.addEventListener('click',()=>{
     }else if(selected === 3){
         // [select-2] 이 가운데 옴 이걸 opacity 1주면 될 듯
         // 그냥 translate(0,0) 해주면 다 각자 제자리로 돌아오지 않을까아..?!?!? 하하하하하ㅏㅎ
-        slideList.style.transform = 'none';
-        slideItems[0].style.transform = 'translate(-839px,0)'; 
-        slideItems[1].style.transform = 'translate(-839px,0)'; 
-        slideItems[2].style.transform = 'translate(-839px,0)';
+
+        slideItems[2].style.transform = 'translate(1705px,0)'; // 맨 뒤로 이동
+        slideList.style.transform = 'translate(-2517px,0)'; // 전체 앞으로 한칸씩 이동
+
+        // slideItems.style.transform = 'translate(-100%,0)';
+        // slideList.style.transform = 'none';
+        // slideItems[0].style.transform = 'translate(-839px,0)'; 
+        // slideItems[1].style.transform = 'translate(-839px,0)'; 
+        // slideItems[2].style.transform = 'translate(-839px,0)';
 
         slideItems[0].style.opacity = '0.5';
         slideItems[1].style.opacity = '1';
@@ -92,6 +122,7 @@ nextBtn.addEventListener('click',()=>{
 
     if(selected === 3){
         selected = 0;
+        
     }
 
 

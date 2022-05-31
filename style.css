@@ -475,6 +475,7 @@ ul, li{
     background-color: #f6f5ef;
     /* margin-top: 40px; */
     /* padding-top: 40px; */
+    width: 100%;
     height: 0px;
     position: relative;
     overflow: hidden;
@@ -482,9 +483,10 @@ ul, li{
 }
 
 .promotion_slide_list{
-    width: 1100px;
+    /* width: 1100px; */
+    width: 100%;
     text-align: center;
-    margin: auto;
+    /* margin: auto; */
     box-sizing: border-box;
     padding: 0px 131px;
 }
@@ -498,9 +500,13 @@ ul, li{
 
 .promotion_banners li{
     margin: 0px 10px;
-    opacity: 0.5;
+    
+    /* opacity: 0.5; */
   
 }
+.swiper-wrapper{
+    /* width: 80% !important; */
+}  
 #active_slider{
     /* opacity: 1; */
    
@@ -519,12 +525,28 @@ ul, li{
 
 
 .slide_item{
-    transform: translate(-100%,0);
+    /* transform: translate(-100%,0); */
+    /* margin: 0px 40px; */
+    /* width: 860px; */
 
 }
-.slide_item:nth-child(2){
+
+.swiper-slide  {
+    display: block;
+    width: 819px !important; 
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+   
+  }
+
+  .swiper-slide-active{
     opacity: 1;
-}
+  }
+
+/* .slide_item:nth-child(2){
+    opacity: 1;
+} */
 /* .slide_item:nth-child(2){
     transform: translate(-100%,0);
     order :3;
@@ -577,6 +599,7 @@ ul, li{
     top: -360px;
     left: 0;
     cursor: pointer;
+    z-index: 3;
 }
 
 .arrow_right{
@@ -590,6 +613,7 @@ ul, li{
     right: 0;
     top: -360px;
     cursor: pointer;
+    z-index: 3;
 }
 
 .arrow_left:hover,
@@ -598,19 +622,41 @@ ul, li{
     transition: all 2s;
 }
 
-.slider_controller{
+.swiper-pagination-bullet{
+    background: center/cover url(images/프로모션더보기/main_prom_off.png) !important;
+    width: 13px !important;
+    height: 12px !important;
+    opacity: 1 !important; 
+}
+.swiper-pagination-bullet-active { 
+    background: center/cover url(images/프로모션더보기/main_prom_on.png) !important;
+    width: 13px !important;
+    height: 12px !important;
+}
+
+.swiper-pagination{
+    /* display: flex !important; */
+}
+/* .slider_controller{
     position: relative;
+    z-index: 5;
     background-color: red;
     box-sizing: border-box;
     width: 1200px;
     height: 24px;
     margin: auto;
     margin-top: 40px;
+} */
 
-}
 .slider_controller_btn{
-    background: url(images/프로모션더보기/main_prom_play.png);
-    position: relative;
+    background: center/cover url(images/프로모션더보기/main_prom_play.png) ;
+    /* position: relative; */
+    width: 9px;
+    height: 12px;
+    display: flex;
+/*  */
+    top: 100;
+    left: 200;
 }
 
 .slider_controller_page{
@@ -619,13 +665,13 @@ ul, li{
 .slider_controller_paginations{
 
 }
-.pagination_1,
+/* .pagination_1,
 .pagination_2,
 .pagination_3{
     background: url(images/프로모션더보기/main_prom_off.png);
     position: relative;
     z-index: 5 ;
-}
+} */
 
 
 
