@@ -74,9 +74,12 @@ ul, li{
     margin: 10px;
     float: right;
 }
-
+.nav-info ul {
+    vertical-align: middle;
+    margin-bottom: 23px;
+}
 .nav-info ul li{
-    font: normal 13px Avenir, Arial, georgia;;
+    font: normal 13px Avenir, Arial, georgia;
     /* font-size: 15px; */
     padding: 0 15px;
     border-right: 1px solid rgb(150, 150, 150);
@@ -218,25 +221,28 @@ ul, li{
     width: 100%; */
 }
 
-
-
-
 .search_btn{
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
     display: inline-block;
-    /* padding: 10px; */
     margin: auto;
     box-sizing: border-box;
     width: 34px;
     height: 34px;
+    position: relative;
+    cursor: pointer;
 }
 
 .search_btn input{
     display: none;
 }
 
+.search_btn img{
+    position: absolute;
+    top: 6px;
+    left: 7px;
+}
 
 /* */
 
@@ -635,7 +641,15 @@ ul, li{
 }
 
 .swiper-pagination{
-    /* display: flex !important; */
+    z-index: 1 !important;
+    top: 666px;
+    /* position: relative; */
+	/* top: 10px;
+	right: 10px; */
+	/* width: auto !important; */
+    
+	/* left: auto !important; */
+	/* margin: 0; */
 }
 /* .slider_controller{
     position: relative;
@@ -653,10 +667,11 @@ ul, li{
     /* position: relative; */
     width: 9px;
     height: 12px;
-    display: flex;
+    /* display: inline-block; */
+    /* display: flex; */
 /*  */
-    top: 100;
-    left: 200;
+    /* top: 100;
+    left: 200; */
 }
 
 .slider_controller_page{

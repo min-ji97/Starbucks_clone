@@ -442,14 +442,14 @@ function promotionBtnToggle(){
 
     // slidesPerGroup: 3,
     centeredSlides: true,
-    
+    speed : 1000,
     slidesPerView: 'auto',
     // spaceBetween: 30,
     loop: true,
     // loopFillGroupWithBlank: true,
 
     autoplay: {
-        delay: 2500,
+        delay: 4000,
         disableOnInteraction: false,
     },
     //  modules: [Navigation, Pagination],
